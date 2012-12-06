@@ -1,0 +1,24 @@
+main: edu.unca.schalvet.GladiatorPlugin.GladiatorPlugin
+name: GladiatorPlugin
+version: 0.1
+
+commands:
+  gladiator:
+    description: Gladiator plugin commands
+    usage: /<gladiator> command
+    permission: gladiator.*
+permissions:
+  gladiator.*:
+    description: gives all permissions of the GlagiatorPlugin
+    default: true
+    children:
+      gladiator.arena:
+        description: sets down an arena in front of player
+      gladiator.tpme:
+        description: teleports the player to the arena
+      gladiator.zombies:
+        description: creates zombies in arena
+      gladiator.invincible:
+        description: gives player full diamond
+      gladiator.tpspec:
+        description: teleports player into the arena
